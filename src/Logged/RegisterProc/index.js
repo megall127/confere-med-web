@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./styled";
 import logo from "../../assets/img/logo.png";
-import { RadioButton } from 'primereact/radiobutton';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
@@ -12,7 +11,6 @@ import { InputNumber } from 'primereact/inputnumber';
 import { Calendar } from 'primereact/calendar';
 
 const RegisterProc = () => {
-    const [value, setValue] = useState()
     const [clinics, setClinics] = useState([])
     const [allDocs, setallDocs] = useState([])
     const [dateproc, setDateProc] = useState(new Date())

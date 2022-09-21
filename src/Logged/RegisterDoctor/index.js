@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import * as S from "./styled";
 import logo from "../../assets/img/logo.png";
 import { RadioButton } from 'primereact/radiobutton';

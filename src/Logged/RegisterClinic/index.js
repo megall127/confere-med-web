@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import * as S from "./styled";
 import logo from "../../assets/img/logo.png";
-import { RadioButton } from 'primereact/radiobutton';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
@@ -10,7 +9,6 @@ import api from "../../service/api";
 import toast, { Toaster } from 'react-hot-toast';
 
 const RegisterClinic = () => {
-    const [value, setValue] = useState()
     const [loading, setLoading] = useState(false);
 
     const [objClinic, setObjClinic] = useState({

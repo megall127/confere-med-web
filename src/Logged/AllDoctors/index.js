@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./styled";
 import logo from "../../assets/img/logo.png";
-import { RadioButton } from 'primereact/radiobutton';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
@@ -20,7 +19,6 @@ import { Dropdown } from 'primereact/dropdown';
 
 const AllDoctors = () => {
     const [allDocs, setallDocs] = useState()
-    const [totalValue, setTotalValue] = useState(0)
     const [loading, setLoading] = useState(false);
     const [obgSelect, setObjSelect] = useState({})  
     const [obgSelectProc, setObjSelectProc] = useState({})  
@@ -30,11 +28,6 @@ const AllDoctors = () => {
     const [selectedOption, setSelectedOption] = useState(null);
     const [selectedOptionPay, setSelectedOptionPay] = useState(null);
 
-    const [objClinic, setObjClinic] = useState({
-        name: '',
-        local: ''
-    })
-    
     const customStyles = {
         content: {
           top: '50%',
@@ -64,11 +57,6 @@ const AllDoctors = () => {
         { name: 'Atrasado', code: 3 },
     ];
 
-
-
-    const notifySucess = () => toast.success('Clínica cadastrado com sucesso.');
-
-    const notifyErro = () => toast.error('Informações incorretas, verifique e tente novamente.');
 
     const paginatorLeft = <Button type="button" icon="pi pi-refresh" className="p-button-text" />;
     const paginatorRight = <Button type="button" icon="pi pi-cloud" className="p-button-text" />;

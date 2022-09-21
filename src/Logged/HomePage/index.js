@@ -1,4 +1,3 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../service/api";
@@ -15,7 +14,6 @@ import * as S from "./styled";
 const HomePage = () => {
 
     const [selectPage, setSelectPage] = useState(0)
-    const [resp, setResp] = useState()
 
 
     const navigation = useNavigate()
@@ -47,10 +45,10 @@ const HomePage = () => {
 
     const auth = () => {
         api.get('/checkroute')
-        .then((res) => {
+        .then(() => {
             
         })
-        .catch((err) => {
+        .catch(() => {
              navigation('/unatorized')
              setTimeout(() => {
                 navigation('/')
