@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 const api = axios.create({
-    baseURL: "http://apiconferemed.com.br/api",
+    baseURL: "http://consult.apiconferemed.com.br:3303/api",
   });
 
   api.interceptors.request.use(async (config) => {

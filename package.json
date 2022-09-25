@@ -1,6 +1,6 @@
 {
   "name": "confere-med-web",
-  "homepage": "apiconferemed.com.br",
+  "homepage": "https://admim.apiconferemed.com.br",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
